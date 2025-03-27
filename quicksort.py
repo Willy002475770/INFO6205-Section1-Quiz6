@@ -15,6 +15,8 @@ def quicksort(arr, low=0, high=None):
     if is_sorted(arr):
         return arr
     else :
+        if high is None:
+            high = len(arr) - 1
         
         if low < high:
             pivot = partition(arr, low, high)
